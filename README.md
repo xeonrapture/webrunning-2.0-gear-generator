@@ -1,6 +1,8 @@
 # How to Use
 A gear generator for Webrunning 2.0.
 
+Check out the code or click [here](https://xeonrapture.github.io/webrunning-2.0-gear-generator/) to generate gear yourself.
+
 To use, clone the repo, go to main.py, and modify luck, gearTypeNumber, rarity, color, color2, and amount to generate as many pieces of gear as you'd like.
 
 Having everything but luck set to None means it randomizes everything. The luck variable is required.
