@@ -9,4 +9,4 @@ Go [here](https://publish.obsidian.md/xeonrapture/xr/XRRPG+2.0/Rule+Modules/Webr
 
 All this is part of the [Xeon Rapture](https://publish.obsidian.md/xeonrapture/xr/Xeon+Rapture) project!
 
-Click [here](https://forms.gle/Ptyf1a82r9AZLhgR7) to give feedback. 
+Click [here](https://forms.gle/Ptyf1a82r9AZLhgR7) to give feedback on this code or any part of the XR project.
