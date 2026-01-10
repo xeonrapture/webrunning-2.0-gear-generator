@@ -566,10 +566,7 @@ class Weapon(Gear):
             print(f"- {each.name} = {each.formula}") 
         i = 1
         for each in self.abilities:
-            print(f"Active {i}: {each.name}")
-            # for key, value in each.tierDetails.items():
-            #     print(f"    {key}: {value}")
-            print(f"    Ability Link: {each.link}")
+            print(f"Active {i}: [{each.name}]({each.link})")
             i += 1
         if self.rarity != "Common":
             print(self.rarityActiveMessage)
@@ -703,10 +700,7 @@ class Clothing(Gear):
             print(f"- {each.name} = {each.formula}") 
         i = 1
         for each in self.abilities:
-            print(f"Active {i}: {each.name}")
-            # for key, value in each.tierDetails.items():
-            #     print(f"    {key}: {value}")
-            print(f"    Ability Link: {each.link}")
+            print(f"Active {i}: [{each.name}]({each.link})")
             i += 1
         if self.rarity != "Common":
             print(self.rarityActiveMessage)
