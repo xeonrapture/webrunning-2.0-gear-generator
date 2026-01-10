@@ -169,7 +169,7 @@ def run_generator(luck:int, amount:int, gearTypeNumber:int, rarity, color, color
         "run_generator(luck_js, amount_js, gearTypeNumber_js, rarity_js, color_js, color2_js)"
       );
 
-      out.textContent = result || "(no output)";
+      out.innerHTML = result || "(no output)";
     };
 
     out.textContent = "Ready.";
