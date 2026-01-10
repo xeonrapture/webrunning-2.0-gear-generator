@@ -237,7 +237,7 @@ class Gear:
     def printToFile(self):
         with open(file, "a", encoding="utf-8") as f:
             print("",file=f)
-            print(f"## #{Gear.COUNT}",file=f)
+            print(f"#{Gear.COUNT}",file=f)
             print("",file=f)
             print(f"- Gear: {self.specificItem}",file=f)
             print(f"- Rarity: {self.rarity}",file=f)
@@ -918,7 +918,7 @@ class Consumable(Gear):
     def printToFile(self):
         with open(file, "a", encoding="utf-8") as f:
             print("",file=f)
-            print(f"## #{Gear.COUNT}",file=f)
+            print(f"#{Gear.COUNT}",file=f)
             print("",file=f)
             Gear.COUNT += 1
             print(f"- Gear: {self.consumableAesthetic}",file=f)
