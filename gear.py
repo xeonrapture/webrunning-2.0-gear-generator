@@ -566,7 +566,8 @@ class Weapon(Gear):
             print(f"- {each.name} = {each.formula}") 
         i = 1
         for each in self.abilities:
-            print(f"Active {i}: <a target="_blank" href={each.link}>{each.name}</a>")
+            blank = '"_blank"'
+            print(f"Active {i}: <a target={blank} href={each.link}>{each.name}</a>")
             i += 1
         if self.rarity != "Common":
             print(self.rarityActiveMessage)
@@ -700,7 +701,8 @@ class Clothing(Gear):
             print(f"- {each.name} = {each.formula}") 
         i = 1
         for each in self.abilities:
-            print(f"Active {i}: <a target="_blank" href={each.link}>{each.name}</a>")
+            blank = '"_blank"'
+            print(f"Active {i}: <a target={blank} href={each.link}>{each.name}</a>")
             i += 1
         if self.rarity != "Common":
             print(self.rarityActiveMessage)
@@ -1160,3 +1162,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
