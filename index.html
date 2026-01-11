@@ -111,36 +111,39 @@
     <pre id="out">Starting…</pre>
 
     <script type="module">
-          import { loadPyodide } from "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.mjs";
+      import { loadPyodide } from "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.mjs";
 
-          const out = document.getElementById("out");
-          const btn = document.getElementById("run");
+      const out = document.getElementById("out");
+      const btn = document.getElementById("run");
 
-          function val(id) { return document.getElementById(id).value; }
+      function val(id) {
+        return document.getElementById(id).value;
+      }
 
-          // Load pyodide
-          const pyodide = await loadPyodide();
+      // Load pyodide
+      const pyodide = await loadPyodide();
 
-          // Fetch your repo python files (must be in same folder as index.html on GitHub Pages)
-          const pyFiles = [
-            "abilityCatalog.py",
-            "ability.py",
-            "statbuff.py",
-            "miscFunc.py",
-            "gear.py",
-            "helperFunc.py",
-            "main.py"
-          ];
+      // Fetch your repo python files (must be in same folder as index.html on GitHub Pages)
+      const pyFiles = [
+        "abilityCatalog.py",
+        "ability.py",
+        "statbuff.py",
+        "miscFunc.py",
+        "gear.py",
+        "helperFunc.py",
+        "main.py",
+      ];
 
-          for (const name of pyFiles) {
-            const resp = await fetch(name);
-            if (!resp.ok) throw new Error(`Failed to fetch ${name}: ${resp.status}`);
-            const code = await resp.text();
-            pyodide.FS.writeFile(name, code);
-          }
+      for (const name of pyFiles) {
+        const resp = await fetch(name);
+        if (!resp.ok)
+          throw new Error(`Failed to fetch ${name}: ${resp.status}`);
+        const code = await resp.text();
+        pyodide.FS.writeFile(name, code);
+      }
 
-          // Define a wrapper that captures stdout from printGear (same behavior as main.py)
-          pyodide.runPython(`
+      // Define a wrapper that captures stdout from printGear (same behavior as main.py)
+      pyodide.runPython(`
       import io, sys
       import helperFunc
 
@@ -179,62 +182,63 @@
           return buf.getvalue()
       `);
 
+      btn.disabled = false;
+      btn.textContent = "Generate Gear";
 
+      btn.onclick = async () => {
+        out.textContent = "Running…";
 
-          btn.disabled = false;
-          btn.textContent = "Generate Gear";
+        const luck = parseInt(val("luck"), 10);
+        const amount = parseInt(val("amount"), 10);
+        const gearTypeNumber = parseInt(val("gearTypeNumber"), 10);
+        const rarity = val("rarity");
+        const color = val("color");
+        const color2 = val("color2");
 
-          btn.onclick = async () => {
-            out.textContent = "Running…";
+        // call python function
+        pyodide.globals.set("luck_js", luck);
+        pyodide.globals.set("amount_js", amount);
+        pyodide.globals.set("gearTypeNumber_js", gearTypeNumber);
+        pyodide.globals.set("rarity_js", rarity);
+        pyodide.globals.set("color_js", color);
+        pyodide.globals.set("color2_js", color2);
 
-            const luck = parseInt(val("luck"), 10);
-            const amount = parseInt(val("amount"), 10);
-            const gearTypeNumber = parseInt(val("gearTypeNumber"), 10);
-            const rarity = val("rarity");
-            const color = val("color");
-            const color2 = val("color2");
+        const result = pyodide.runPython(
+          "run_generator(luck_js, amount_js, gearTypeNumber_js, rarity_js, color_js, color2_js)"
+        );
 
-            // call python function
-            pyodide.globals.set("luck_js", luck);
-            pyodide.globals.set("amount_js", amount);
-            pyodide.globals.set("gearTypeNumber_js", gearTypeNumber);
-            pyodide.globals.set("rarity_js", rarity);
-            pyodide.globals.set("color_js", color);
-            pyodide.globals.set("color2_js", color2);
+        out.innerHTML = result || "(no output)";
+      };
 
-            const result = pyodide.runPython(
-              "run_generator(luck_js, amount_js, gearTypeNumber_js, rarity_js, color_js, color2_js)"
-            );
+      btn2.disabled = false;
+      btn2.textContent = "Generate Luck-Calculated Gear";
 
-            btn2.disabled = false;
-            btn2.textContent = "Generate Luck-Calculated Gear";
+      btn2.onclick = async () => {
+        out.textContent = "Running…";
 
-            btn2.onclick = async () => {
-            out.textContent = "Running…";
+        const luck = parseInt(val("luck"), 10);
+        const amount = parseInt(val("amount"), 10);
+        const gearTypeNumber = parseInt(val("gearTypeNumber"), 10);
+        const rarity = val("rarity");
+        const color = val("color");
+        const color2 = val("color2");
 
-            const luck = parseInt(val("luck"), 10);
-            const amount = parseInt(val("amount"), 10);
-            const gearTypeNumber = parseInt(val("gearTypeNumber"), 10);
-            const rarity = val("rarity");
-            const color = val("color");
-            const color2 = val("color2");
+        // call python function
+        pyodide.globals.set("luck_js", luck);
+        pyodide.globals.set("amount_js", amount);
+        pyodide.globals.set("gearTypeNumber_js", gearTypeNumber);
+        pyodide.globals.set("rarity_js", rarity);
+        pyodide.globals.set("color_js", color);
+        pyodide.globals.set("color2_js", color2);
 
-            // call python function
-            pyodide.globals.set("luck_js", luck);
-            pyodide.globals.set("amount_js", amount);
-            pyodide.globals.set("gearTypeNumber_js", gearTypeNumber);
-            pyodide.globals.set("rarity_js", rarity);
-            pyodide.globals.set("color_js", color);
-            pyodide.globals.set("color2_js", color2);
+        const result = pyodide.runPython(
+          "run_generator2(luck_js, amount_js, gearTypeNumber_js, rarity_js, color_js, color2_js)"
+        );
 
-            const result = pyodide.runPython(
-              "run_generator2(luck_js, amount_js, gearTypeNumber_js, rarity_js, color_js, color2_js)"
-            );
+        out.innerHTML = result || "(no output)";
+      };
 
-            out.innerHTML = result || "(no output)";
-          };
-
-          out.textContent = "Ready.";
+      out.textContent = "Ready.";
     </script>
   </body>
 </html>
