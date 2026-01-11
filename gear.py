@@ -1136,6 +1136,7 @@ class Bauble(Gear):
                 print(f"- Aesthetic: {self.aesthetic}",file=f) 
 
     def printCalc(self):
+        super().printCalc()
         print(f"Gear Type: Bauble")
         if self.baubleType == "Diamond" or self.baubleType == "Orb" or self.baubleType == "Egg":
             print(f"Bauble Aesthetic: {self.baubleAesthetic}")
