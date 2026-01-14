@@ -55,8 +55,8 @@ class StatBuff:
             "HP ✦": ["L","Lx1.25","Lx1.5","Lx2","Lx2.5"],
             "Defense DC": ["L÷5","L÷4","L÷3","L÷2","L"],
             "Defense DC ✦": ["L÷4","L÷3","L÷2","L","Lx1.25"],
-            "Armor": ["L÷5","L÷4","L÷3","L÷2","L"],
-            "Armor ✦": ["L÷4","L÷3","L÷2","L","Lx1.25"],
+            "Armor": ["L÷5","L÷5","L÷4","L÷4","L÷3"],
+            "Armor ✦": ["L÷4","L÷4","L÷3","L÷3","L÷2"],
             "Defense": [None,None,None,"D","D+1"],
 
             "Initiative": ["L÷5","L÷4","L÷3","L÷2","L"],
@@ -100,8 +100,8 @@ class StatBuff:
             "HP ✦": [self.nothing, self.timesOnePointTwoFive, self.timesOnePointFive, self.timesOnePointSevenFive, self.timesTwoPointFive],
             "Defense DC": [self.divFive, self.divFour, self.divThree, self.divTwo, self.nothing],
             "Defense DC ✦": [self.divFour, self.divThree, self.divTwo, self.nothing, self.timesOnePointTwoFive],
-            "Armor": [self.divFive, self.divFour, self.divThree, self.divTwo, self.nothing],
-            "Armor ✦": [self.divFour, self.divThree, self.divTwo, self.nothing, self.timesOnePointTwoFive],
+            "Armor": [self.divFive, self.divFive, self.divFour, self.divFour, self.divThree],
+            "Armor ✦": [self.divFour, self.divFour, self.divThree, self.divThree, self.divTwo],
             "Defense": [None,None,None,self.digits, self.digitsPlusOne],
 
             "Initiative": [self.divFive, self.divFour, self.divThree, self.divTwo, self.nothing],
@@ -276,4 +276,5 @@ def main():
         print(f"{statBuff.name}, {statBuff.rarity}, {statBuff.color}, {statBuff.gearType}, {statBuff.normalName}, {statBuff.formula}, {statBuff.calc}")
 
 if __name__ == "__main__":
+
     main()
