@@ -542,8 +542,8 @@ class PassiveCatalog(AbilityCatalog):
                             "Tier I": "G = The amount of Red Pieces of gear you have equipped.\n- Attack Plus: G÷4\n- Damage Plus: G÷4",
                             "Tier II": "G = The amount of Red Pieces of gear you have equipped.\n- Attack Plus: G÷3\n- Damage Plus: G÷3\n- HP: Gx1.25",
                             "Tier III": "G = The amount of Red Pieces of gear you have equipped.\n- Attack Plus: G÷2\n- Damage Plus: G÷2\n- HP: Gx1.5\n- Initiative: G÷2",
-                            "Tier IV": "G = The amount of Red Pieces of gear you have equipped.\n- Attack Plus: G\n- Damage Plus: G\n- HP: Gx1.75\n- Initiative: G\n- Armor: G",
-                            "Tier V": "G = The amount of Red Pieces of gear you have equipped.\n- Attack Plus: Gx1.25\n- Damage Plus: Gx1.25\n- HP: Gx2.5\n- Initiative: Gx1.25\n- Armor: Gx1.25\n- Power: +1"
+                            "Tier IV": "G = The amount of Red Pieces of gear you have equipped.\n- Attack Plus: G\n- Damage Plus: G\n- HP: Gx1.75\n- Initiative: G\n- Armor: G÷3",
+                            "Tier V": "G = The amount of Red Pieces of gear you have equipped.\n- Attack Plus: Gx1.25\n- Damage Plus: Gx1.25\n- HP: Gx2.5\n- Initiative: Gx1.25\n- Armor: G÷2\n- Power: +1"
                         }
                     }
                 case "Blue":
@@ -599,10 +599,10 @@ class PassiveCatalog(AbilityCatalog):
                         },
                         "Blue Buff" : {
                             "Tier I": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: G÷4\n- Armor: G÷4",
-                            "Tier II": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: G÷3\n- Armor: G÷3\n- Inventory Slots: G÷2",
-                            "Tier III": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: G÷2\n- Armor: G÷2\n- Inventory Slots: G\n- HP: Gx1.5",
-                            "Tier IV": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: G\n- Armor: G\n- Inventory Slots: Gx1.25\n- HP: Gx1.75\n- HP Regen: G",
-                            "Tier V": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: Gx1.25\n- Armor: Gx1.25\n- Inventory Slots: Gx1.5\n- HP: Gx2.5\n- HP Regen: Gx1.25\n- Defense: +1"
+                            "Tier II": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: G÷3\n- Armor: G÷4\n- Inventory Slots: G÷2",
+                            "Tier III": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: G÷2\n- Armor: G÷3\n- Inventory Slots: G\n- HP: Gx1.5",
+                            "Tier IV": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: G\n- Armor: G÷3\n- Inventory Slots: Gx1.25\n- HP: Gx1.75\n- HP Regen: G",
+                            "Tier V": "G = The amount of Blue pieces of gear you have equipped.\n- Defense DC: Gx1.25\n- Armor: G÷2\n- Inventory Slots: Gx1.5\n- HP: Gx2.5\n- HP Regen: Gx1.25\n- Defense: +1"
                         }
                     }
                 case "Green":
@@ -965,3 +965,4 @@ class BaubleEffectCatalog(AbilityCatalog):
         }
 
         
+
