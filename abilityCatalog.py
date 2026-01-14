@@ -312,9 +312,9 @@ class ClothingActiveCatalog(AbilityCatalog):
                     self.abilities = {
                         "Darkness" : {
                             "Tier I": "Create a cloud of darkness with radius equal to AOE Radius:\n- Anybody within the cloud has disadvantage to do any Attack Roll or check to resist any effect\n- Anybody outside the cloud has disadvantage to attack or apply an effect to anybody within the cloud",
-                            "Tier II": "Create a cloud of darkness with radius equal to AOE Radius x1.5:\n- Anybody within the cloud has disadvantage to do any Attack Roll or check to resist any effect\n- Anybody outside the cloud has -2 to attack or apply an effect to anybody within the cloud\n- You can reduce the radius of this effect as much as you'd like",
-                            "Tier III": "Create a cloud of darkness with radius equal to AOE Radius x1.75:\n- Anybody within the cloud has disadvantage to do any Attack Roll or check to resist any effect\n- Anybody outside has no penalty to Attack Rolls and effects targeting anybody within the cloud\n- You can reduce the radius of this effect as much as you'd like",
-                            "Tier IV": "Create a cloud of darkness with radius equal to AOE Radius x2:\n- Anybody within the cloud has disadvantage to do any Attack Roll or check to resist any effect\n- Anybody outside or any ally within the cloud has a +3 to Attack Rolls and effects targeting anybody within the cloud\n- You can reduce the radius of this effect as much as you'd like"
+                            "Tier II": "Create a cloud of darkness with radius equal to AOE Radius x1.5:\n- Anybody within the cloud has disadvantage to do any Attack Roll or check to resist any effect\n- Anybody outside the cloud has -2 to attack or apply an effect to anybody within the cloud",
+                            "Tier III": "Create a cloud of darkness with radius equal to AOE Radius x1.75:\n- Anybody within the cloud has disadvantage to do any Attack Roll or check to resist any effect\n- Anybody outside has no penalty to Attack Rolls and effects targeting anybody within the cloud",
+                            "Tier IV": "Create a cloud of darkness with radius equal to AOE Radius x2:\n- Anybody within the cloud has disadvantage to do any Attack Roll or check to resist any effect\n- Anybody outside or any ally within the cloud has a +3 to Attack Rolls and effects targeting anybody within the cloud"
                         },
                         "Teleport Ally" : {
                             "Tier I": "Teleport a willing ally in range an amount of tiles equal or less than 1.5x your Perception stat.\nGive them 2 Energy of any color; this Energy can go over their Energy Cap.",
@@ -386,9 +386,9 @@ class ClothingActiveCatalog(AbilityCatalog):
                         },
                         "Freezing Cloud" : {
                             "Tier I": "Create a freezing cloud with radius equal to AOE Radius.\nAnybody within the cloud at the start of their turn gets a stack of Freeze",
-                            "Tier II": "Create a freezing cloud with radius equal to AOE Radius x1.5.\nAnybody within the cloud at the start of their turn gets 2 stacks of Freeze\nYou can reduce the radius of this effect as much as you'd like.",
-                            "Tier III": "Create a freezing cloud with radius equal to AOE Radius x1.75.\nAnybody within the cloud at the start of their turn gets 3 stacks of Freeze\nYou may exempt any of your allies from this effect\nYou can reduce the radius of this effect as much as you'd like.",
-                            "Tier IV": "Create a freezing cloud with radius equal to AOE Radius x2.\nAnybody within the cloud at the start of their turn gets 4 stacks of Freeze\nYou may exempt any of your allies from this effect\nYou can reduce the radius of this effect as much as you'd like."
+                            "Tier II": "Create a freezing cloud with radius equal to AOE Radius x1.5.\nAnybody within the cloud at the start of their turn gets 2 stacks of Freeze",
+                            "Tier III": "Create a freezing cloud with radius equal to AOE Radius x1.75.\nAnybody within the cloud at the start of their turn gets 3 stacks of Freeze\nYou may exempt any of your allies from this effect",
+                            "Tier IV": "Create a freezing cloud with radius equal to AOE Radius x2.\nAnybody within the cloud at the start of their turn gets 4 stacks of Freeze\nYou may exempt any of your allies from this effect"
                         }
                     }
                 case "Red Gray" | "Gray Red":
@@ -401,9 +401,9 @@ class ClothingActiveCatalog(AbilityCatalog):
                         },
                         "Inferno" : {
                             "Tier I": "Create a burning cloud with radius equal to AOE Radius.\nAnybody within the cloud at the start of their turn gets a stack of Burn",
-                            "Tier II": "Create a burning cloud with radius equal to AOE Radius x1.5.\nAnybody within the cloud at the start of their turn gets 2 stacks of Burn\nYou can reduce the radius of this effect as much as you'd like.",
-                            "Tier III": "Create a burning cloud with radius equal to AOE Radius x1.75.\nAnybody within the cloud at the start of their turn gets 3 stacks of Burn\nYou may exempt any of your allies from this effect\nYou can reduce the radius of this effect as much as you'd like.",
-                            "Tier IV": "Create a burning cloud with radius equal to AOE Radius x2.\nAnybody within the cloud at the start of their turn gets 4 stacks of Burn\nYou may exempt any of your allies from this effect\nYou can reduce the radius of this effect as much as you'd like."
+                            "Tier II": "Create a burning cloud with radius equal to AOE Radius x1.5.\nAnybody within the cloud at the start of their turn gets 2 stacks of Burn",
+                            "Tier III": "Create a burning cloud with radius equal to AOE Radius x1.75.\nAnybody within the cloud at the start of their turn gets 3 stacks of Burn\nYou may exempt any of your allies from this effect",
+                            "Tier IV": "Create a burning cloud with radius equal to AOE Radius x2.\nAnybody within the cloud at the start of their turn gets 4 stacks of Burn\nYou may exempt any of your allies from this effect"
                         }
                     }
                 case "Green Gray" | "Gray Green":
@@ -416,9 +416,9 @@ class ClothingActiveCatalog(AbilityCatalog):
                         },
                         "Poison Fog" : {
                             "Tier I": "Create a poison cloud with radius equal to AOE Radius.\nAnybody within the cloud at the start of their turn gets a stack of Poison",
-                            "Tier II": "Create a poison cloud with radius equal to AOE Radius x1.5.\nAnybody within the cloud at the start of their turn gets 2 stacks of Poison\nYou can reduce the radius of this effect as much as you'd like.",
-                            "Tier III": "Create a poison cloud with radius equal to AOE Radius x1.75.\nAnybody within the cloud at the start of their turn gets 3 stacks of Poison\nYou may exempt any of your allies from this effect\nYou can reduce the radius of this effect as much as you'd like.",
-                            "Tier IV": "Create a poison cloud with radius equal to AOE Radius x2.\nAnybody within the cloud at the start of their turn gets 4 stacks of Poison\nYou may exempt any of your allies from this effect\nYou can reduce the radius of this effect as much as you'd like."
+                            "Tier II": "Create a poison cloud with radius equal to AOE Radius x1.5.\nAnybody within the cloud at the start of their turn gets 2 stacks of Poison",
+                            "Tier III": "Create a poison cloud with radius equal to AOE Radius x1.75.\nAnybody within the cloud at the start of their turn gets 3 stacks of Poison\nYou may exempt any of your allies from this effect",
+                            "Tier IV": "Create a poison cloud with radius equal to AOE Radius x2.\nAnybody within the cloud at the start of their turn gets 4 stacks of Poison\nYou may exempt any of your allies from this effect"
                         }
                     }
 
@@ -963,4 +963,5 @@ class BaubleEffectCatalog(AbilityCatalog):
                 "Epic" : "Local node shop luck +8, 30% off original prices, 5% off original refresh price.",
                 "Legendary" : "Local node shop luck +10, 35% off original prices, 10% off original refresh price."}
         }
+
         
