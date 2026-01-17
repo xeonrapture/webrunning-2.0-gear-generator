@@ -54,24 +54,24 @@ class Ability:
                 if self.tier:
                     self.abilityCatalog = abilityCatalog.WeaponActiveCatalog(self.color, self.color2)
                     self.isUpToRarity = True
-                    self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Rule+Modules/Webrunning+2.0/Gear+Generation/Gear+Actives#"
+                    self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Sub-RPGs/Webrunning+2.0/Gear+Generation/Gear+Actives#"
             case "Head" | "Torso" | "Hands" | "Legs" | "Feet" | "Ring" | "Neck":
                 if self.tier:
                     self.abilityCatalog = abilityCatalog.ClothingActiveCatalog(self.color, self.color2)
                     self.isUpToRarity = True
-                    self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Rule+Modules/Webrunning+2.0/Gear+Generation/Gear+Actives#"
+                    self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Sub-RPGs/Webrunning+2.0/Gear+Generation/Gear+Actives#"
             case "Kernel":
                 self.abilityCatalog = abilityCatalog.PassiveCatalog(self.color, self.color2)
                 self.isSingle = True
-                self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Rule+Modules/Webrunning+2.0/Gear+Generation/Kernels#"
+                self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Sub-RPGs/Webrunning+2.0/Gear+Generation/Kernels#"
             case "Consumable":
                 self.abilityCatalog = abilityCatalog.ConsumableEffectCatalog(self.color, self.color2)
                 self.isSingle = True
-                self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Rule+Modules/Webrunning+2.0/Gear+Generation/Consumables#"
+                self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Sub-RPGs/Webrunning+2.0/Gear+Generation/Consumables#"
             case "Bauble":
                 self.abilityCatalog = abilityCatalog.BaubleEffectCatalog(self.color, self.color2)
                 self.isSingle = True
-                self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Rule+Modules/Webrunning+2.0/Gear+Generation/Baubles#"
+                self.linkSuffix = "https://xeonrapture.com/xr/XRRPG+2.0/Sub-RPGs/Webrunning+2.0/Gear+Generation/Baubles#"
             case _:
                 raise Exception(f"GearType was {self.gearType}\nGearType must be one of the following:\nOne-Handed Weapon, Two-Handed Weapon, Head, Torso, Hands, Legs, Feet, Ring, Neck, Kernel, Consumable, Bauble")
             
@@ -140,4 +140,5 @@ def main():
     print(ability.tierDetails)
 
 if __name__ == "__main__":
+
     main()
