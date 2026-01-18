@@ -264,7 +264,7 @@ class Weapon(Gear):
             "Blue": ["Buckler Shield","Mace","Hammer","Club","Shillelagh","Gauntlet"],
             "Green": ["Pistol","Crossbow","Boomerang","Snowball","Shuriken","Throwing Knife",
         "Javelin","Rock","Uzi Gun","Coin","Sling","Atlatl"],
-            "Gray": ["Wand","Orb","Totem","Crystal","Rod","Lantern","Ice Cube","Ring",
+            "Gray": ["Wand","Orb","Totem","Crystal","Rod","Lantern","Ice Cube","Pineapple",
         "Bomb","Lightning Javelin","Mirror","Bell"]
         }
 
@@ -1200,5 +1200,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
