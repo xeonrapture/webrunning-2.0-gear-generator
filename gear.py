@@ -1136,45 +1136,7 @@ class Bauble(Gear):
                 print(f"- Aesthetic: {self.aesthetic}",file=f) 
 
     def printCalc(self):
-        super().printCalc()
-        print(f"Gear Type: Bauble")
-        if self.baubleType == "Diamond" or self.baubleType == "Orb" or self.baubleType == "Egg":
-            print(f"Bauble Aesthetic: {self.baubleAesthetic}")
-            if self.isEggRandom != True:
-                print(f"Color: {self.color}")
-                if self.isColorMix:
-                    print(f"Color 2: {self.color2}")
-            else:
-                print(f"Color: Random")
-        else:
-            print(f"{self.baubleType}: {self.baubleAesthetic}")
-        if self.baubleType == "Diamond":
-            print(f"Stat Buff(s):")
-            for each in self.colorStatBuffs:
-                print(f"- {each.name} = {each.calc}") 
-        elif self.baubleType == "Orb":
-            print(f"Stat Buff(s):")
-            for each in self.colorStatBuffs:
-                if isinstance(each.calc, str):
-                    newCalc = each.calc.replace("L", "G")
-                    print(f"- {each.name} = {newCalc}") 
-                else:
-                    print(f"- {each.name} = {each.calc}")
-        elif self.baubleType == "Trinket":
-            buff = self.colorStatBuffs[0]
-            print(f"Skill Buff: {buff.name} = {buff.calc}")
-        elif self.baubleType == "Knickknack":
-            for each in self.abilities:
-                print(f"Ability: {each.name}")
-                for key, value in each.tierDetails.items():
-                    if key == self.rarity:
-                        print(f"- Details: {value}")
-        elif self.baubleType == "Egg":
-            print(f"XP to Hatch: {self.eggXP}")
-        print(f"Essence Value: {self.essenceValue}")
-        print(f"Credit Value: {self.creditValue}")
-        if self.baubleType == "Curio":
-            print(f"Aesthetic: {self.aesthetic}") 
+        self.printGear()
 
 gearTypeMap = {
 0: None,
@@ -1200,6 +1162,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
