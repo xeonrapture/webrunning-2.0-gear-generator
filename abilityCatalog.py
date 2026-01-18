@@ -64,10 +64,10 @@ class WeaponActiveCatalog(AbilityCatalog):
                 case "Blue":
                     self.abilities = {
                         "Ramming Speed" : {
-                            "Tier I": "Use Movement tiles to do a ramming attack:\n- Run up to half your Movement Speed in a straight line\n- Add Defense and your Attack Plus to an attack roll\n- Deal each enemy that you hit a d10 of damage + Damage Plus",
-                            "Tier II": "Use Movement tiles to do a ramming attack:\n- Run up to 3/4 your Movement Speed in a straight line\n- Add Defense and your Attack Plus to an attack roll\n- Deal each enemy that you hit a d12 of damage + Damage Plus\n- You may run through solid wood this way",
-                            "Tier III": "Use Movement tiles to do a ramming attack:\n- Run up to all your Movement Speed in a straight line\n- Add Defense and your Attack Plus to an attack roll\n- Deal each enemy that you hit a 2d8 of damage + Damage Plus\n- You may run through solid wood and stone this way",
-                            "Tier IV": "Use Movement tiles to do a ramming attack:\n- Run up to all your Movement Speed in a straight line\n- Add Defense and your Attack Plus to an attack roll\n- Deal each enemy that you hit a 2d8 of damage + Damage Plus\n- You may run through solid wood, stone, and metal this way"
+                            "Tier I": "Use Movement tiles to do a ramming attack:\n- Run up to half your Movement Speed in a straight line (no wonky movement across tiles, only straights and diagonals)\n- Add Defense and your Attack Plus to an attack roll\n- Deal each enemy that you hit a d10 of damage + Damage Plus",
+                            "Tier II": "Use Movement tiles to do a ramming attack:\n- Run up to 3/4 your Movement Speed in a straight line (no wonky movement across tiles, only straights and diagonals)\n- Add Defense and your Attack Plus to an attack roll\n- Deal each enemy that you hit a d12 of damage + Damage Plus\n- You may run through solid wood this way",
+                            "Tier III": "Use Movement tiles to do a ramming attack:\n- Run up to all your Movement Speed in a straight line (no wonky movement across tiles, only straights and diagonals)\n- Add Defense and your Attack Plus to an attack roll\n- Deal each enemy that you hit a 2d8 of damage + Damage Plus\n- You may run through solid wood and stone this way",
+                            "Tier IV": "Use Movement tiles to do a ramming attack:\n- Run up to all your Movement Speed in a straight line (no wonky movement across tiles, only straights and diagonals)\n- Add Defense and your Attack Plus to an attack roll\n- Deal each enemy that you hit a 2d8 of damage + Damage Plus\n- You may run through solid wood, stone, and metal this way"
                         },
                         "Freezing Smite" : {
                             "Tier I": "Do a melee attack:\n- Add Defense and your Attack Plus to your attack roll\n- If you hit, do an attack dealing a d10 of damage + your Damage Plus and apply a stack of Freeze",
@@ -965,4 +965,5 @@ class BaubleEffectCatalog(AbilityCatalog):
         }
 
         
+
 
