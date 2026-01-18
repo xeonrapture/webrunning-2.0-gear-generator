@@ -897,11 +897,11 @@ class ConsumableEffectCatalog(AbilityCatalog):
                 "Legendary" : "Move all Local Shop Upgrade categories up two tiers"
             },
             "Respec Stats" : {
-                "Common" : "You may reshuffle your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear",
-                "Uncommon" : "You may reshuffle your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear",
-                "Rare" : "You may add one point to any Basic Stat and/or reshuffle your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear",
-                "Epic" : "You may add one point to any Basic Stat and/or reshuffle your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear",
-                "Legendary" : "You may add one point to any two Basic Stats and/or reshuffle your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear"
+                "Common" : "You may reallocate your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear",
+                "Uncommon" : "You may reallocate your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear",
+                "Rare" : "You may add one point to any Basic Stat and/or reallocate your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear",
+                "Epic" : "You may add one point to any Basic Stat and/or reallocate your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear",
+                "Legendary" : "You may add one point to any two Basic Stats and/or reallocate your Basic Stats (Power, Defense, Speed, Intelligence) any way you like; make sure to not reallocate any Basic Stat Buffs given by Gear"
             },
             "Gear Mod" : ["Upgrade a piece of Gear that has the same or lower rarity as this Consumable","Reroll the Stat Buffs of a piece of Gear that has the same or lower rarity as this Consumable","Condense a piece of Gear that has the same or lower rarity as this Consumable (can condense as many modifiers as you'd like)","Change the Aesthetic of any piece of Gear, regardless of rarity"],
             "Temp Buff" : "These Stat Buffs last one full node (and disappear when you transition to the next node)",
@@ -965,5 +965,6 @@ class BaubleEffectCatalog(AbilityCatalog):
         }
 
         
+
 
 
