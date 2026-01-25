@@ -466,11 +466,11 @@ class PassiveCatalog(AbilityCatalog):
                             "Tier V": "Get a map of every node you enter as well as a hint to a secret and descriptions of what enemies are in each area of the node."
                         },
                         "Shortcuts" : {
-                            "Tier I": "Spend:\n- 1000 Essence to return to your home node even without clearing the node",
-                            "Tier II": "Spend:\n- 500 Essence to return to your home node even without clearing the node\n- 250 Essence to get a small preview of what the next node is like.",
-                            "Tier III": "Spend:\n- 500 Essence to return to your home node even without clearing the node\n- 500 Essence to drop a marker, allowing you to warp back to that node even if it's within a secure sector\n- 250 Essence to get a small preview of what the next node is like",
-                            "Tier IV": "Spend:\n- 250 Essence to return to your home node even without clearing the node\n- 250 Essence to drop a marker, allowing you to warp back to that node even if it's within a secure sector\n- 100 Essence to get a small preview of what the next node is like",
-                            "Tier V": "Spend:\n- 250 Essence to use all the functions within your Local Node wherever you are (including the Shop; Essence to Credit conversion and vice versa; and Gear Upgrading, Rerolling, and Condensing)\n- 100 Essence to return to your home node even without clearing the node\n- 100 Essence to drop a marker, allowing you to warp back to that node even if it's within a secure sector\n- 50 Essence to get a small preview of what the next node is like"
+                            "Tier I": "Spend:\n- 1000 Essence to return to your home node from within low-security nodes without clearing them",
+                            "Tier II": "Spend:\n- 500 Essence to return to your home node from within low-security nodes without clearing them\n- 250 Essence to get a small preview of what the next node is like.",
+                            "Tier III": "Spend:\n- 500 Essence to return to your home node from within low-security nodes without clearing them\n- 500 Essence to drop a marker, allowing you to warp back to that node even if it's within a secure sector\n- 250 Essence to get a small preview of what the next node is like",
+                            "Tier IV": "Spend:\n- 250 Essence to return to return to your home node from within low-security nodes without clearing them\n- 250 Essence to drop a marker, allowing you to warp back to that node even if it's within a secure sector\n- 100 Essence to get a small preview of what the next node is like",
+                            "Tier V": "Spend:\n- 250 Essence to use all the functions within your Local Node wherever you are (including the Shop; Essence to Credit conversion and vice versa; and Gear Upgrading, Rerolling, and Condensing)\n- 100 Essence to return to your home node from within low-security nodes without clearing them\n- 100 Essence to drop a marker, allowing you to warp back to that node even if it's within a secure sector\n- 50 Essence to get a small preview of what the next node is like"
                         },
                         "Inter-Node Patch-up" : {
                             "Tier I": "Heal up to 5 HP between each node.",
@@ -965,6 +965,7 @@ class BaubleEffectCatalog(AbilityCatalog):
         }
 
         
+
 
 
 
